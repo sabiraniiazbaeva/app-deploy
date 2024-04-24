@@ -33,4 +33,9 @@ jobs:
 
     - name: Install Helm chart
       run: |
-        hello install apache  ./apache  --set repository.image=python-app --set repository.tag=2.0.0
+        helm install apache ./apache --set repository.image=kaizenacademy/python-app --set repository.tag=2.0.0
+
+
+
+
+
