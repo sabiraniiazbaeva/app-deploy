@@ -41,4 +41,4 @@ jobs:
 
     - name: Install Helm chart
       run: |
-        helm install apache ./apache --set repository.image=${{ secrets.docker_image }} --set repository.tag=${{ secrets.image_tag }}
+        helm install apache ./apache --set repository.image=${{ inputs.docker_image }} --set repository.tag=${{ inputs.image_tag }}
